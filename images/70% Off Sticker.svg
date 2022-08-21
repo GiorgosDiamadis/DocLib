@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197" height="197" viewBox="0 0 197 197">
+  <defs>
+    <filter id="Ellipse_3" x="0" y="0" width="197" height="197" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feFlood flood-opacity="0.235"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_70_Off_Sticker" data-name="70% Off Sticker" transform="translate(-887.5 -1756.5)">
+    <g transform="matrix(1, 0, 0, 1, 887.5, 1756.5)" filter="url(#Ellipse_3)">
+      <circle id="Ellipse_3-2" data-name="Ellipse 3" cx="82" cy="82" r="82" transform="translate(9.5 9.5)" fill="#fdb82c"/>
+    </g>
+    <g id="Text" transform="translate(-20 25)">
+      <text id="OF_WORKFLOWS" data-name="OF WORKFLOWS" transform="translate(936 1853)" font-size="13.69" font-family="Avenir-Black, Avenir" font-weight="800"><tspan x="-57" y="14">OF WORKFLOWS</tspan></text>
+      <text id="_70_" data-name="70%" transform="translate(936 1800)" font-size="62" font-family="Gotham-Black, Gotham" font-weight="800"><tspan x="1" y="50">70</tspan><tspan y="50" font-size="45">%</tspan></text>
+      <text id="AUTOMATE_UP_TO" data-name="AUTOMATE UP TO" transform="translate(936 1781)" font-size="13.69" font-family="Avenir-Black, Avenir" font-weight="800"><tspan x="-61" y="14">AUTOMATE UP TO</tspan></text>
+    </g>
+  </g>
+</svg>

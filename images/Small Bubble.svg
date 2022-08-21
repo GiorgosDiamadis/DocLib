@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130.239" height="98.301" viewBox="0 0 130.239 98.301">
+  <defs>
+    <filter id="Path_5709" x="0" y="0" width="130.239" height="98.301" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Small_Bubble" data-name="Small Bubble" transform="translate(58.119 42.15)">
+    <g transform="matrix(1, 0, 0, 1, -58.12, -42.15)" filter="url(#Path_5709)">
+      <path id="Path_5709-2" data-name="Path 5709" d="M76.734,56.186c-.876,4.087-2.914,7.141-6.833,8.427s-7.3.035-10.306-2.9c-3.361,4.435-7.652,6.908-13.135,6.555-5.438-.351-9.423-3.241-12.234-8.132l-1.531.888c-6.9,4-15.383.082-17.049-7.906a1.54,1.54,0,0,0-1.571-1.43A16.338,16.338,0,0,1,.009,35.785,16.437,16.437,0,0,1,13.04,18.968,1.576,1.576,0,0,0,14.448,17.7C17.153,8.313,26.827,4,35.336,8.349c.374.191.757.366,1.224.591L37.4,7.485A14.38,14.38,0,0,1,61.629,5.9c.806,1.067,1.339,1.147,2.484.55,8.945-4.667,19.427.812,21.126,11.009.145.866.452,1.179,1.3,1.262A14.875,14.875,0,0,1,99.872,30.461a15.407,15.407,0,0,1-7.113,16.55,1.957,1.957,0,0,0-.8,1.258c-.813,7.546-7.267,11.417-14.053,8.394C77.564,56.509,77.207,56.377,76.734,56.186Z" transform="translate(8 8)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
