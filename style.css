@@ -50,6 +50,13 @@ body {
     bottom: 109px;
 }
 
+.carousel-item {
+    height: 100%;
+}
+
+.list-item[data-list="after"] {
+    display: none;
+}
 
 .bg-light-blue {
     background-color: var(--bg-light-blue);
