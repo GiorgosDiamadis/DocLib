@@ -187,6 +187,41 @@
 }
 
 @media screen and (max-width: 1100px) {
+    .book-demo-bak-container {
+        width: 100% !important;
+    }
+
+    .inside-product-img {
+        margin: auto !important;
+        display: block !important;
+        width: 80% !important;
+        height: auto !important;
+    }
+
+    .badge-product {
+        top: -45px !important;
+        left: 13px !important;
+        width: 114px !important;
+    }
+
+    .nav-item[role="presentation"] {
+        justify-content: flex-start !important;
+    }
+
+    .tab-pane .my-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .nav-tabs.my-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 70% !important;
+        padding: 1rem !important;
+    }
+
     #accounts-payable-div-text {
         width: 80% !important;
     }
@@ -216,7 +251,9 @@
 }
 
 @media screen and (max-width: 900px) {
-
+    .nav-tabs.my-container {
+        width: 90% !important;
+    }
     .mid-text {
         font-size: 30px !important;
     }
@@ -236,6 +273,17 @@
 }
 
 @media screen and (max-width: 700px) {
+    .product-header{
+        padding: 1rem !important;
+    }
+
+    .nav-tabs.my-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100% !important;
+        padding: 1rem !important;
+    }
     .screen-image-container {
         background-size: contain !important;
         width: 300px !important;
@@ -262,6 +310,10 @@
         left: 12px !important;
         height: 156px !important;
         width: 277px !important;
+    }
+
+    .click-label{
+        font-size: 16px !important;
     }
 
     .hero-img {
@@ -301,8 +353,8 @@
     }
 
     .footer-menu {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex !important;
+        flex-direction: column !important;
     }
 }
 
@@ -337,7 +389,9 @@
     .normal-text {
         font-size: 19px !important;
     }
-
+    .click-label{
+        font-size: 16px !important;
+    }
 }
 
 @media screen and (max-width: 600px) {
