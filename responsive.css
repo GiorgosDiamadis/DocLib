@@ -108,6 +108,20 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .book-calendar {
+        padding: 2rem !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .calendar{
+        width: 70%;
+    }
+    .book-time{
+        margin-top: 1rem;
+        width: 70%;
+        align-items: center;
+    }
     .clients {
         position: unset !important;
         margin-top: 0% !important;
@@ -229,6 +243,14 @@
 
 @media screen and (max-width: 800px) {
 
+    .calendar{
+        width: 90%;
+    }
+    .book-time{
+        margin-top: 1rem;
+        width: 90%;
+        align-items: center;
+    }
     .footer-menu {
         gap: 45px !important;
     }
@@ -251,9 +273,18 @@
 }
 
 @media screen and (max-width: 900px) {
+    .book-form{
+        padding: 2rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 80%;
+    }
     .nav-tabs.my-container {
         width: 90% !important;
     }
+
     .mid-text {
         font-size: 30px !important;
     }
@@ -273,7 +304,16 @@
 }
 
 @media screen and (max-width: 700px) {
-    .product-header{
+    .book-form{
+        max-width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .inside-product-img {
+        box-shadow: -110px 1px 0px 37px #f2f2f2 !important;
+    }
+
+    .product-header {
         padding: 1rem !important;
     }
 
@@ -284,6 +324,7 @@
         width: 100% !important;
         padding: 1rem !important;
     }
+
     .screen-image-container {
         background-size: contain !important;
         width: 300px !important;
@@ -312,7 +353,7 @@
         width: 277px !important;
     }
 
-    .click-label{
+    .click-label {
         font-size: 16px !important;
     }
 
@@ -359,6 +400,14 @@
 }
 
 @media screen and (max-width: 650px) {
+    .calendar{
+        width: 100%;
+    }
+    .book-time{
+        margin-top: 1rem;
+        width: 100%;
+        align-items: center;
+    }
     .testimonial-title {
         text-align: center !important;
     }
@@ -389,12 +438,18 @@
     .normal-text {
         font-size: 19px !important;
     }
-    .click-label{
+
+    .click-label {
         font-size: 16px !important;
     }
 }
 
 @media screen and (max-width: 600px) {
+    .book-calendar{
+        margin-top: 2rem;
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
 
     .testimonial-boxes {
         width: 100%;
@@ -444,6 +499,9 @@
 }
 
 @media screen and (max-width: 500px) {
+    input{
+        max-width: 100%;
+    }
     .client {
         width: 180px !important;
         height: auto !important;

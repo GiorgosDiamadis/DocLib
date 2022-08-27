@@ -1,7 +1,7 @@
 $(document).ready(function (e) {
     var $carousel = $("#carouselExampleIndicators");
     $carousel.carousel();
-    var handled = false; // global variable
+    var handled = false;
 
     $carousel.bind("slide.bs.carousel", function (e) {
         console.log(e);
@@ -14,21 +14,14 @@ $(document).ready(function (e) {
                 "active"
             );
         } else {
-            handled = !handled; //if handled=true make it back to false to work normally.
+            handled = !handled;
         }
     });
 
     $(".carousel-indicators button").on("click", function () {
-        // Click event for indicators
         $(this).addClass("active").siblings().removeClass("active");
-        // remove siblings active class and add it to current clicked item
-        handled = true; // set global variable to true to identify whether indicator changing was handled or not.
+        handled = true;
     });
-    // const triggerFirstTabEl = document.querySelector(
-    //     "#myTab li:last-child button"
-    // );
-    // if ()
-    // bootstrap.Tab.getInstance(triggerFirstTabEl).show(); // Select first tab
 
     document.querySelectorAll(".click-label").forEach((l) => {
 
@@ -45,29 +38,24 @@ $(document).ready(function (e) {
             tabs[index].click();
         })
     })
+
+
 });
 
 interact(".draggable").draggable({
-    // enable inertial throwing
     inertia: true,
-    // keep the element within the area of it's parent
     modifiers: [
         interact.modifiers.restrictRect({
             restriction: "parent",
             endOnly: true,
         }),
     ],
-    // enable autoScroll
     autoScroll: true,
 
     listeners: {
-        // call this function on every dragmove event
         move: dragMoveListener,
-
-        // call this function on every dragend event
         end(event) {
             var textEl = event.target.querySelector("p");
-
             textEl &&
             (textEl.textContent =
                 "moved a distance of " +

@@ -30,6 +30,7 @@ button.nav-link.active {
 .inside-product-circle-tabs {
     width: 18px !important;
     height: 18px !important;
+    cursor: pointer;
     border-radius: 50%;
 }
 
@@ -509,6 +510,51 @@ ul {
     gap: 75px;
 }
 
+.bg-light-grey {
+    background-color: var(--light-grey) !important;
+}
+
+.book-form, .book-calendar {
+    max-width: 80%;
+    min-height: 490px !important;
+    display: flex;
+    height: fit-content;
+    margin: auto;
+    border-radius: 40px;
+    background-color: white;
+    padding: 5rem;
+}
+
+.book-calendar {
+    padding: 7rem;
+    width: 1000px !important;
+    justify-content: space-around;
+}
+.time{
+    margin: 10px 0;
+    padding: 5px;
+    cursor: pointer;
+    border:2px solid transparent;
+}
+
+.time.selected{
+    background-color: white !important;
+    border-color: var(--bg-blue) !important;
+}
+.book-form {
+    width: 905px !important;
+    min-height: 490px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    margin: auto;
+    border-radius: 40px;
+    background-color: white;
+    padding: 5rem;
+}
+
 ::placeholder {
     color: white;
     font-size: 25px;
@@ -700,4 +746,97 @@ button[data-bs-slide-to].active {
     transform: translateY(-50%);
     border: 1px solid black;
     border-radius: 50%;
+}
+
+/**/
+.calendar {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 2rem;
+}
+
+.month {
+    width: 100%;
+    color: black !important;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.month ul li {
+    color: white;
+    letter-spacing: 3px;
+}
+
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13%;
+    color: black;
+    text-align: center;
+}
+
+.circle-blue-logo{
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("./images/Logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li, .days div li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13%;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: black;
+}
+.days div li{
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.days div li:hover{
+    cursor: pointer;
+    background-color: var(--red);
+    border-radius: 50%;
+}
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
 }
