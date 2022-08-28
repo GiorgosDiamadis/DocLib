@@ -39,6 +39,21 @@ $(document).ready(function (e) {
         })
     })
 
+    document.querySelectorAll("div[data-bs-toggle='collapse']").forEach((t) => {
+       t.addEventListener('click',()=>{
+           const exp = t.getAttribute("aria-expanded");
+           console.log(exp)
+           if (exp === 'false') {
+               const arrow_bl = t.querySelector(".arrow-black")
+               arrow_bl.style.transform = "rotate(-90deg)";
+           } else {
+               const arrow_bl = t.querySelector(".arrow-black")
+               arrow_bl.style.transform = "rotate(0deg)";
+           }
+       })
+
+    })
+
 
 });
 

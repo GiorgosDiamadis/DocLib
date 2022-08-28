@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="476" height="544" viewBox="0 0 476 544">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rectangle_2267" data-name="Rectangle 2267" d="M50,0H476a0,0,0,0,1,0,0V544a0,0,0,0,1,0,0H50A50,50,0,0,1,0,494V50A50,50,0,0,1,50,0Z" transform="translate(830 129)" fill="#ffd78f"/>
+    </clipPath>
+  </defs>
+  <g id="Yellow_Background_with_Grid" data-name="Yellow Background with Grid" transform="translate(-830 -129)">
+    <path id="Rectangle_2042" data-name="Rectangle 2042" d="M50,0H476a0,0,0,0,1,0,0V544a0,0,0,0,1,0,0H50A50,50,0,0,1,0,494V50A50,50,0,0,1,50,0Z" transform="translate(830 129)" fill="#ffd78f"/>
+    <g id="Mask_Group_21" data-name="Mask Group 21" clip-path="url(#clip-path)">
+      <g id="Artwork_25" data-name="Artwork 25" transform="translate(1099.468 401)">
+        <g id="Group_3800" data-name="Group 3800" transform="translate(-269.467 -284.02)">
+          <g id="Group_3799" data-name="Group 3799">
+            <g id="Group_3790" data-name="Group 3790" transform="translate(103.724)">
+              <g id="Group_3786" data-name="Group 3786" transform="translate(374.474)">
+                <rect id="Rectangle_2268" data-name="Rectangle 2268" width="2.489" height="567.935" fill="#ffcb78"/>
+              </g>
+              <g id="Group_3787" data-name="Group 3787" transform="translate(249.649)">
+                <rect id="Rectangle_2269" data-name="Rectangle 2269" width="2.489" height="567.935" fill="#ffcb78"/>
+              </g>
+              <g id="Group_3788" data-name="Group 3788" transform="translate(124.825)">
+                <rect id="Rectangle_2270" data-name="Rectangle 2270" width="2.489" height="567.935" fill="#ffcb78"/>
+              </g>
+              <g id="Group_3789" data-name="Group 3789">
+                <rect id="Rectangle_2271" data-name="Rectangle 2271" width="2.489" height="568.039" fill="#ffcb78"/>
+              </g>
+            </g>
+            <g id="Group_3798" data-name="Group 3798" transform="translate(0 36.046)">
+              <g id="Group_3791" data-name="Group 3791" transform="translate(0 449.883)">
+                <rect id="Rectangle_2272" data-name="Rectangle 2272" width="538.935" height="2.617" fill="#ffcb78"/>
+              </g>
+              <g id="Group_3792" data-name="Group 3792" transform="translate(0 374.903)">
+                <rect id="Rectangle_2273" data-name="Rectangle 2273" width="538.935" height="2.617" fill="#ffcb78"/>
+              </g>
+              <g id="Group_3793" data-name="Group 3793" transform="translate(0 224.942)">
+                <rect id="Rectangle_2274" data-name="Rectangle 2274" width="538.935" height="2.617" fill="#ffcb78"/>
+              </g>
+              <g id="Group_3794" data-name="Group 3794" transform="translate(0 74.981)">
+                <rect id="Rectangle_2275" data-name="Rectangle 2275" width="538.935" height="2.617" fill="#ffcb78"/>
+              </g>
+              <g id="Group_3795" data-name="Group 3795" transform="translate(0 299.922)">
+                <rect id="Rectangle_2276" data-name="Rectangle 2276" width="538.935" height="2.617" fill="#ffcb78"/>
+              </g>
+              <g id="Group_3796" data-name="Group 3796" transform="translate(0 149.961)">
+                <rect id="Rectangle_2277" data-name="Rectangle 2277" width="538.935" height="2.617" fill="#ffcb78"/>
+              </g>
+              <g id="Group_3797" data-name="Group 3797">
+                <rect id="Rectangle_2278" data-name="Rectangle 2278" width="538.935" height="2.617" fill="#ffcb78"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

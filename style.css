@@ -292,6 +292,71 @@ button.nav-link.active + span {
     color: var(--yellow) !important;
 }
 
+.about-header-headshot {
+    position: relative;
+}
+
+.about-header-headshot::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1000px;
+    height: 545px;
+    /*background-color: var(--light-yellow);*/
+    background-image: url("./images/Yellow Background with Grid.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -853px;
+    top: -47px;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+.toggle-icon {
+    left: -120px;
+    top: 3px;
+    width: 57px;
+}
+
+.approach {
+    margin: 3rem 0 !important;
+}
+
+.approaches:first-child {
+    margin-top: 1rem !important;
+}
+
+.approach-title {
+    cursor: pointer;
+}
+
+.arrow-black {
+    left: -42px;
+    display: block;
+    top: 23px;
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    background-image: url("./images/Artwork 23.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 19px;
+    transition: transform .25s ease;
+    transform: rotate(-90deg);
+}
+
+.doclib-approach {
+    left: -5.4%;
+    width: 446px;
+    height: 278px;
+    border-radius: 0 40px 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .product-header {
     height: 250px;
     background-color: var(--bg-blue2);
@@ -530,17 +595,19 @@ ul {
     width: 1000px !important;
     justify-content: space-around;
 }
-.time{
+
+.time {
     margin: 10px 0;
     padding: 5px;
     cursor: pointer;
-    border:2px solid transparent;
+    border: 2px solid transparent;
 }
 
-.time.selected{
+.time.selected {
     background-color: white !important;
     border-color: var(--bg-blue) !important;
 }
+
 .book-form {
     width: 905px !important;
     min-height: 490px !important;
@@ -797,7 +864,7 @@ button[data-bs-slide-to].active {
     text-align: center;
 }
 
-.circle-blue-logo{
+.circle-blue-logo {
     top: -50px;
     width: 100px;
     height: 100px;
@@ -824,19 +891,56 @@ button[data-bs-slide-to].active {
     margin-bottom: 5px;
     color: black;
 }
-.days div li{
+
+.days div li {
     display: inline-flex !important;
     justify-content: center !important;
     align-items: center !important;
 }
-.days div li:hover{
+
+.days div li:hover {
     cursor: pointer;
     background-color: var(--red);
     border-radius: 50%;
 }
+
 /* Highlight the "current" day */
 .days li .active {
     padding: 5px;
     background: #1abc9c;
     color: white !important
+}
+
+
+.headshot {
+    position: relative;
+}
+
+.headshot img {
+    display: block;
+    margin: auto;
+}
+.headshot-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0px;
+    left: 38px;
+    width: 257px;
+    height: 100px;
+
+    text-align: center;
+    z-index: 1;
+}
+.headshot::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 38px;
+    width: 257px;
+    height: 100px;
+    border-radius: 0 0 20px 20px;
+    background-color: rgba(117, 170, 248, 0.82);
 }
