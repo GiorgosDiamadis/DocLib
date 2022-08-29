@@ -40,21 +40,34 @@ $(document).ready(function (e) {
     })
 
     document.querySelectorAll("div[data-bs-toggle='collapse']").forEach((t) => {
-       t.addEventListener('click',()=>{
-           const exp = t.getAttribute("aria-expanded");
-           console.log(exp)
-           if (exp === 'false') {
-               const arrow_bl = t.querySelector(".arrow-black")
-               arrow_bl.style.transform = "rotate(-90deg)";
-           } else {
-               const arrow_bl = t.querySelector(".arrow-black")
-               arrow_bl.style.transform = "rotate(0deg)";
-           }
-       })
+        t.addEventListener('click', () => {
+            const exp = t.getAttribute("aria-expanded");
+            console.log(exp)
+            if (exp === 'false') {
+                const arrow_bl = t.querySelector(".arrow-black")
+                arrow_bl.style.transform = "rotate(-90deg)";
+            } else {
+                const arrow_bl = t.querySelector(".arrow-black")
+                arrow_bl.style.transform = "rotate(0deg)";
+            }
+        })
 
     })
 
-
+    document.getElementById("before-doclib").addEventListener('click', (e) => {
+        document.querySelector(".list").classList.remove("orange");
+        document.querySelector(".list").classList.add("grey");
+        document.getElementById("before-doclib").classList.add("active")
+        document.getElementById("after-doclib").classList.remove("active")
+        toggleLists('block', 'none')
+    })
+    document.getElementById("after-doclib").addEventListener('click', (e) => {
+        document.querySelector(".list").classList.add("orange");
+        document.querySelector(".list").classList.remove("grey");
+        document.getElementById("before-doclib").classList.remove("active")
+        document.getElementById("after-doclib").classList.add("active")
+        toggleLists('none', 'block')
+    })
 });
 
 interact(".draggable").draggable({
@@ -86,33 +99,39 @@ interact(".draggable").draggable({
 
 function dragMoveListener(event) {
     var target = event.target;
+    const allowedWidth = event.target.parentElement.offsetWidth / 2
     // keep the dragged position in the data-x/data-y attributes
     var x = (parseFloat(target.getAttribute("data-x")) || 0) + event.dx;
     var y = (parseFloat(target.getAttribute("data-y")) || 0) + 0;
 
     // translate the element
-    target.style.transform = "translate(" + x + "px, " + y + "px)";
+    if ((x > 0 && x < allowedWidth) || x < 0 && (-x) < allowedWidth) {
+        target.style.transform = "translate(" + x + "px, " + y + "px)";
 
-    // update the posiion attributes
-    target.setAttribute("data-x", x);
-    target.setAttribute("data-y", y);
+        // update the posiion attributes
+        target.setAttribute("data-x", x);
+        target.setAttribute("data-y", y);
 
-    var moveAmount = target.getAttribute("data-x");
-    if (moveAmount <= 0) {
-        document.querySelector(".list").classList.remove("orange");
-        document.querySelector(".list").classList.add("grey");
-        toggleLists("block", "none");
-    } else {
-        document.querySelector(".list").classList.add("orange");
-        document.querySelector(".list").classList.remove("grey");
-        toggleLists("none", "block");
+        var moveAmount = target.getAttribute("data-x");
+        if (moveAmount <= 0) {
+            document.querySelector(".list").classList.remove("orange");
+            document.querySelector(".list").classList.add("grey");
+            toggleLists("block", "none");
+        } else {
+            document.querySelector(".list").classList.add("orange");
+            document.querySelector(".list").classList.remove("grey");
+            toggleLists("none", "block");
+        }
     }
+
+
 }
 
 // this function is used later in the resizing and gesture demos
 window.dragMoveListener = dragMoveListener;
 
 const toggleLists = (forBefore, forAfter) => {
+    console.log("sdf")
     document.querySelectorAll(".list-item[data-list='before']").forEach((el) => {
         el.style.display = forBefore;
     });

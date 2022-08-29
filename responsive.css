@@ -1,4 +1,11 @@
 @media screen and (max-width: 1400px) {
+    .about-header-headshot {
+        float: right !important;
+    }
+
+    .about-header-text {
+        float: left !important;
+    }
 
     .screen-image-container {
         width: 100% !important;
@@ -108,20 +115,49 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .doclib-approach-section {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding-right: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .approaches {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .approach {
+        width: 70% !important;
+    }
+
+    .doclib-approach {
+        position: unset !important;
+        width: 100%;
+        border-radius: 0 !important;
+    }
+
     .book-calendar {
         padding: 2rem !important;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .calendar{
+
+    .calendar {
         width: 70%;
     }
-    .book-time{
+
+    .book-time {
         margin-top: 1rem;
         width: 70%;
         align-items: center;
     }
+
     .clients {
         position: unset !important;
         margin-top: 0% !important;
@@ -138,7 +174,7 @@
     }
 
     .thumbs-up-section .bg-blue {
-        height: 100vh !important;
+        height: 100% !important;
     }
 
     .thumbs-up-section .bg-blue img {
@@ -153,6 +189,59 @@
 }
 
 @media screen and (max-width: 1000px) {
+    #list-container {
+        max-width: 100% !important;
+        width: 100% !important;
+        border-radius: 0 !important;
+    }
+
+    #after-doclib, #before-doclib {
+        transition: background-color .3s ease, color .3s ease;
+    }
+
+    #after-doclib {
+        padding: .5rem 1rem !important;
+        border: 1px solid var(--yellow);
+    }
+
+    #after-doclib.active {
+        color: white !important;
+        background-color: var(--yellow);
+    }
+
+    #before-doclib {
+        padding: .5rem 1rem !important;
+        border: 1px solid var(--grey);
+    }
+
+    #before-doclib.active {
+        color: white !important;
+        background-color: var(--grey);
+    }
+
+    #slider {
+        display: none;
+    }
+
+    .discount-sticker {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        top: -100px !important;
+
+    }
+
+    .list::after, .list::before {
+        border-radius: 0 !important;
+    }
+
+    .zero-padding {
+        padding: 0 !important;
+    }
+
+    .container-fluid.nav-container {
+        padding: 0 1rem !important;
+    }
+
     section {
         padding: 2rem 0 !important;
     }
@@ -180,7 +269,7 @@
 
     .divider {
         width: 100%;
-        height: unset;
+        height: 5px !important;
     }
 
     .background-workers-container img:first-child, .background-workers-container img:nth-child(2) {
@@ -201,6 +290,13 @@
 }
 
 @media screen and (max-width: 1100px) {
+    .big-bubble {
+        z-index: 2 !important;
+        left: 52% !important;
+        top: 52% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
     .book-demo-bak-container {
         width: 100% !important;
     }
@@ -239,18 +335,58 @@
     #accounts-payable-div-text {
         width: 80% !important;
     }
+
+    .navbar-nav {
+        gap: 0 !important;
+    }
 }
 
 @media screen and (max-width: 800px) {
 
-    .calendar{
+    .discount-sticker {
+        display: none !important;
+    }
+
+    .about-header-container {
+        gap: 20px !important;
+        flex-direction: column-reverse !important;
+    }
+
+    .overlay-headshot {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .about-header-button {
+        left: 40% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .about-header-headshot {
+        width: 100% !important;
+    }
+
+    .about-header-headshot img:first-child {
+        display: block !important;
+        margin: auto !important;
+    }
+
+    .about-header-text {
+        width: 90% !important;
+        margin: auto !important;
+        text-align: center !important;
+    }
+
+    .calendar {
         width: 90%;
     }
-    .book-time{
+
+    .book-time {
         margin-top: 1rem;
         width: 90%;
         align-items: center;
     }
+
     .footer-menu {
         gap: 45px !important;
     }
@@ -260,10 +396,6 @@
         display: none !important;
     }
 
-    .big-bubble {
-        z-index: 2;
-        position: unset !important;
-    }
 
     .background-workers-container {
         display: flex !important;
@@ -273,14 +405,27 @@
 }
 
 @media screen and (max-width: 900px) {
-    .book-form{
-        padding: 2rem !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        max-width: 80%;
+    .headshots-section-text {
+        width: 90% !important;
     }
+
+    .doclib-approach {
+        height: fit-content !important;
+        padding: 2rem 0 !important;
+    }
+
+    .approach {
+        margin: 1rem 0 !important;
+    }
+
+    .book-form {
+        padding: 1rem 2rem !important;
+        height: fit-content !important;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
     .nav-tabs.my-container {
         width: 90% !important;
     }
@@ -297,18 +442,30 @@
         font-size: 20px !important;
     }
 
-    #list-container {
-        max-width: 80% !important;
-        width: 80% !important;
-    }
 }
 
 @media screen and (max-width: 700px) {
-    .book-form{
+
+    .footer-fit {
+        height: fit-content !important;
+    }
+
+    footer {
+        overflow-y: unset !important;
+        /*height: fit-content !important;*/
+
+    }
+
+    .big-red-circle {
+        display: none !important;
+    }
+
+    .book-form {
         max-width: 100%;
         height: 100vh;
         border-radius: 0;
     }
+
     .inside-product-img {
         box-shadow: -110px 1px 0px 37px #f2f2f2 !important;
     }
@@ -397,17 +554,23 @@
         display: flex !important;
         flex-direction: column !important;
     }
+
+    .inside-product-bkad {
+        width: 100vw !important;
+    }
 }
 
 @media screen and (max-width: 650px) {
-    .calendar{
+    .calendar {
         width: 100%;
     }
-    .book-time{
+
+    .book-time {
         margin-top: 1rem;
         width: 100%;
         align-items: center;
     }
+
     .testimonial-title {
         text-align: center !important;
     }
@@ -418,7 +581,7 @@
 
     .background-workers-container img:nth-child(2) {
 
-        display: none !important;
+        /*display: none !important;*/
 
     }
 
@@ -431,12 +594,16 @@
         align-items: flex-start !important;
     }
 
+    .toggle-icon {
+        width: 50px !important;
+    }
+
     .mid-text {
         font-size: 25px !important
     }
 
     .normal-text {
-        font-size: 19px !important;
+        font-size: 17px !important;
     }
 
     .click-label {
@@ -445,10 +612,40 @@
 }
 
 @media screen and (max-width: 600px) {
-    .book-calendar{
-        margin-top: 2rem;
+
+    .image-container {
+        height: 182px !important;
+    }
+
+    .approach-title {
+        font-size: 20px !important;
+    }
+
+    .background-workers-container img:nth-child(2), .background-workers-container img:nth-child(1) {
+        width: 225px !important;
+        bottom: -78px !important;
+        /*display: none !important;*/
+
+    }
+
+    .times {
+        width: 80% !important;
+    }
+
+    .approach {
+        width: 100% !important;
+        padding: 0 1rem !important;
+    }
+
+    .approach-desc {
+        padding-left: 0 !important;
+    }
+
+    .book-calendar {
+        margin-top: 2rem !important;
         padding: 0 !important;
         max-width: 100% !important;
+        border-radius: 0 !important;
     }
 
     .testimonial-boxes {
@@ -499,34 +696,43 @@
 }
 
 @media screen and (max-width: 500px) {
-    input{
+    input {
         max-width: 100%;
     }
+
     .client {
-        width: 180px !important;
+        width: 160px !important;
         height: auto !important;
     }
 
-    .background-workers-container img:first-child {
+    .carousel-control-prev {
+        padding-left: 2rem !important;
+    }
 
-        display: none !important;
-
+    .carousel-control-next {
+        padding-right: 2rem !important;
     }
 
     .carousel-item {
-        width: 80%;
+        width: 297px !important;
+        padding: 3rem !important;
     }
 
     .background-workers-container {
         justify-content: center !important;
         align-items: center !important;
-        background-color: white !important;
+        /*background-color: white !important;*/
     }
 
     .big-bubble {
+        width: 100% !important;
         background-size: contain !important;
         background-repeat: no-repeat !important;
         background-position: center;
         height: fit-content;
+    }
+
+    .thumbs-up-section .bg-blue {
+        height: 100% !important;
     }
 }

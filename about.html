@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="responsive.css"/>
+    <link rel="stylesheet" href="./Avenir-Roman/style.css">
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -57,9 +58,9 @@
 <nav
         class="navbar navbar-expand-lg bg-blue  w-100"
 >
-    <div class="container-fluid">
+    <div class="container-fluid nav-container">
         <div class="navbar-brand" href="#">
-            <img src="./images/Logo.svg" alt=""/>
+            <img src="./images/Logo-1.svg" alt=""/>
         </div>
         <button
                 class="navbar-toggler"
@@ -112,9 +113,9 @@
         </div>
     </div>
 </nav>
-<header class="about-header pt-5 mt-5 pb-5 mb-5">
-    <div class="my-container d-flex justify-content-center " style="gap: 100px">
-        <div class="w-50">
+<header class="about-header pt-5 mt-5 pb-4 mb-4">
+    <div class="my-container about-header-container d-flex justify-content-center " style="gap: 100px">
+        <div class="w-50 about-header-text">
             <p class="text-black mid-text fw-black pb-3">Our purpose is to make sure <br> you do your best work.</p>
             <p class="text-black normal-text">
                 None of our team members said when I grow up, I want to contribute to the accounts payable landscape;
@@ -128,7 +129,7 @@
         </div>
         <div class="about-header-headshot">
             <img src="./images/Gary%20Headshot.png" style="width: 337px;height: 443px" alt="">
-            <div class="position-absolute d-flex " style="bottom: 20px;gap: 10px;
+            <div class="position-absolute about-header-button d-flex align-items-center " style="bottom: 20px;gap: 10px;
                 left: 20px;
                 z-index: 10;">
 
@@ -136,27 +137,28 @@
                 <p class="text-white mid-text fw-bold d-inline-block">Hello.</p>
             </div>
 
-            <img class="position-absolute" src="./images/Overlay.svg" alt="" style="bottom: 0;
+            <img class="position-absolute overlay-headshot" src="./images/Overlay.svg" alt="" style="bottom: 0;
     left: 0;">
         </div>
 
     </div>
 </header>
 <section style="width: 95%; padding-right: 5rem;height: fit-content;margin-left: auto"
-         class="d-flex justify-content-end bg-light-grey position-relative">
+         class="d-flex justify-content-end bg-light-grey position-relative doclib-approach-section">
     <div class="text-white doclib-approach fw-bolder mid-text bg-blue position-absolute">
         Here’s the DocLib approach:
     </div>
 
-    <div class="approaches" style="width: 50%;">
+    <div class="approaches">
         <div class="approach d-block m-auto">
             <div data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false"
-                 aria-controls="collapseExample1" class="mid-text text-black fw-black position-relative approach-title">
-                <img src="./images/Open-Minded%20Icon.svg" alt="" class="position-absolute toggle-icon">
-                <img class="position-absolute arrow-black" src="./images/Artwork%2023.svg" alt="">
+                 aria-controls="collapseExample1" class="mid-text text-black fw-black approach-title">
+                <img src="./images/Open-Minded%20Icon.svg" alt="" class="d-inline-block toggle-icon">
+                <img class="d-inline-block arrow-black" src="./images/Artwork%2023.svg" alt="">
                 People-Driven Solutions
             </div>
-            <p id="collapseExample1" class="collapse text-black normal-text">No matter the industry, people are at the
+            <p id="collapseExample1" class="collapse text-black normal-text approach-desc">
+                No matter the industry, people are at the
                 core. We seek to find what will
                 help serve people, which–in
                 turn–will make their teams and organizations stronger. While some processes can be automated, serving
@@ -164,12 +166,14 @@
         </div>
         <div class="approach d-block m-auto">
             <div data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false"
-                 aria-controls="collapseExample2" class="mid-text text-black fw-black position-relative approach-title">
-                <img src="./images/Open-Minded%20Icon.svg" alt="" class="position-absolute toggle-icon">
-                <img class="position-absolute arrow-black" src="./images/Artwork%2023.svg" alt="">
+                 aria-controls="collapseExample2" class="mid-text text-black fw-black approach-title">
+                <img src="./images/Open-Minded%20Icon.svg" alt="" class="d-inline-block toggle-icon">
+                <img class="d-inline-block arrow-black"
+                     src="./images/Artwork%2023.svg" alt="">
                 Open Minded
             </div>
-            <p id="collapseExample2" class="collapse text-black normal-text">No matter the industry, people are at the
+            <p id="collapseExample2" class="collapse text-black normal-text approach-desc">No
+                matter the industry, people are at the
                 core. We seek to find what will
                 help serve people, which–in
                 turn–will make their teams and organizations stronger. While some processes can be automated, serving
@@ -177,12 +181,14 @@
         </div>
         <div class="approach d-block m-auto">
             <div data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false"
-                 aria-controls="collapseExample3" class="mid-text text-black fw-black position-relative approach-title">
-                <img src="./images/Honesty%20Icon.svg" alt="" class="position-absolute toggle-icon">
-                <img class="position-absolute arrow-black" src="./images/Artwork%2023.svg" alt="">
+                 aria-controls="collapseExample3" class="mid-text text-black fw-black approach-title">
+                <img src="./images/Honesty%20Icon.svg" alt="" class="d-inline-block toggle-icon">
+                <img class="d-inline-block arrow-black"
+                     src="./images/Artwork%2023.svg" alt="">
                 Honesty
             </div>
-            <p id="collapseExample3" class="collapse text-black normal-text">No matter the industry, people are at the
+            <p id="collapseExample3" class="collapse text-black normal-text approach-desc">No
+                matter the industry, people are at the
                 core. We seek to find what will
                 help serve people, which–in
                 turn–will make their teams and organizations stronger. While some processes can be automated, serving
@@ -190,12 +196,14 @@
         </div>
         <div class="approach d-block m-auto">
             <div data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false"
-                 aria-controls="collapseExample4" class="mid-text text-black fw-black position-relative approach-title">
-                <img src="./images/Humble%20Go-Getters.svg" alt="" class="position-absolute toggle-icon">
-                <img class="position-absolute arrow-black" src="./images/Artwork%2023.svg" alt="">
+                 aria-controls="collapseExample4" class="mid-text text-black fw-black  approach-title">
+                <img src="./images/Humble%20Go-Getters.svg" alt="" class="d-inline-block toggle-icon">
+                <img class="d-inline-block arrow-black"
+                     src="./images/Artwork%2023.svg" alt="">
                 Humble Go-Getters
             </div>
-            <p id="collapseExample4" class="collapse text-black normal-text">No matter the industry, people are at the
+            <p id="collapseExample4" class="collapse text-black normal-text approach-desc">No
+                matter the industry, people are at the
                 core. We seek to find what will
                 help serve people, which–in
                 turn–will make their teams and organizations stronger. While some processes can be automated, serving
@@ -203,12 +211,14 @@
         </div>
         <div class="approach d-block m-auto">
             <div data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false"
-                 aria-controls="collapseExample1" class="mid-text text-black fw-black position-relative approach-title">
-                <img src="./images/Grit%20Icon.svg" alt="" class="position-absolute toggle-icon">
-                <img class="position-absolute arrow-black" src="./images/Artwork%2023.svg" alt="">
+                 aria-controls="collapseExample1" class="mid-text text-black fw-black approach-title">
+                <img src="./images/Grit%20Icon.svg" alt="" class="d-inline-block toggle-icon">
+                <img class="d-inline-block arrow-black"
+                     src="./images/Artwork%2023.svg" alt="">
                 Grit
             </div>
-            <p id="collapseExample5" class="collapse text-black normal-text">No matter the industry, people are at the
+            <p id="collapseExample5" class="collapse text-black normal-text approach-desc">No
+                matter the industry, people are at the
                 core. We seek to find what will
                 help serve people, which–in
                 turn–will make their teams and organizations stronger. While some processes can be automated, serving
@@ -216,12 +226,14 @@
         </div>
         <div class="approach d-block m-auto">
             <div data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false"
-                 aria-controls="collapseExample6" class="mid-text text-black fw-black position-relative approach-title">
-                <img src="./images/Loyalty%20Icon.svg" alt="" class="position-absolute toggle-icon">
-                <img class="position-absolute arrow-black" src="./images/Artwork%2023.svg" alt="">
+                 aria-controls="collapseExample6" class="mid-text text-black fw-black  approach-title">
+                <img src="./images/Loyalty%20Icon.svg" alt="" class="d-inline-block toggle-icon">
+                <img class="d-inline-block arrow-black"
+                     src="./images/Artwork%2023.svg" alt="">
                 Loyalty
             </div>
-            <p id="collapseExample6" class="collapse text-black normal-text">No matter the industry, people are at the
+            <p id="collapseExample6" class="collapse text-black normal-text approach-desc">No
+                matter the industry, people are at the
                 core. We seek to find what will
                 help serve people, which–in
                 turn–will make their teams and organizations stronger. While some processes can be automated, serving
@@ -232,13 +244,13 @@
 <section class="w-100 " style="height: fit-content">
     <div class="my-container">
         <p class="mid-text text-black fw-bold text-center">The faces behind the screen:</p>
-        <p class="normal-text text-black text-center w-50 m-auto">
+        <p class="headshots-section-text normal-text text-black text-center w-50 m-auto">
             Our team is peppered throughout the United States: seasoned pros that come together virtually to help your
             team succeed.
         </p>
 
         <div class="row mt-5">
-            <div class="col-lg-3 mt-4 mb-4">
+            <div class="col-xl-3 col-lg-4 col-sm-6  mt-4 mb-4">
                 <div class="headshot">
                     <img src="./images/Joey%20Headshot.png" alt="">
                     <div class="headshot-text position-absolute">
@@ -247,7 +259,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  mt-4 mb-4">
+            <div class="col-xl-3 col-lg-4 col-sm-6  mt-4 mb-4">
                 <div class="headshot">
                     <img src="./images/Gary%20Headshot.png" alt="">
                     <div class="headshot-text position-absolute">
@@ -256,7 +268,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  mt-4 mb-4">
+            <div class="col-xl-3 col-lg-4 col-sm-6 mt-4 mb-4">
                 <div class="headshot">
                     <img src="./images/Hershel%20Headshot.png" alt="">
                     <div class="headshot-text position-absolute">
@@ -265,7 +277,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  mt-4 mb-4">
+            <div class="col-xl-3 col-lg-4 col-sm-6  mt-4 mb-4">
                 <div class="headshot">
                     <img src="./images/Justin%20Headshot.png" alt="">
                     <div class="headshot-text position-absolute">
@@ -274,7 +286,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  mt-4 mb-4">
+            <div class="col-xl-3 col-lg-4 col-sm-6  mt-4 mb-4">
                 <div class="headshot">
 
                     <img src="./images/Marcus%20Headshot.png" alt="">
@@ -284,38 +296,78 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  mt-4 mb-4">
+            <div class="col-xl-3 col-lg-4 col-sm-6  mt-4 mb-4">
                 <div class="headshot">
-                    <img  src="./images/Melissa%20Headshot.png" alt="">
+                    <img src="./images/Melissa%20Headshot.png" alt="">
                     <div class="headshot-text position-absolute">
                         <p class="normal-text text-white fw-bold">Melissa Sin</p>
                         <p class="small-text text-white">Solutions Engineer</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3  mt-4 mb-4">
-                <img class="headshot" src="./images/Scott%20Headshot.png" alt="">
+            <div class="col-xl-3 col-lg-4 col-sm-6  mt-4 mb-4">
+                <div class="headshot">
+
+                    <img src="./images/Scott%20Headshot.png" alt="">
+                    <div class="headshot-text position-absolute">
+                        <p class="normal-text text-white fw-bold">Scott Jones</p>
+                        <p class="small-text text-white">Project Manager</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3  mt-4 mb-4">
-                <img class="headshot" src="./images/Steven%20Headshot.png" alt="">
+            <div class="col-xl-3 col-lg-4 col-sm-6 mt-4 mb-4">
+                <div class="headshot">
+                    <img class="headshot" src="./images/Steven%20Headshot.png" alt="">
+                    <div class="headshot-text position-absolute">
+                        <p class="normal-text text-white fw-bold">Steven Snyder</p>
+                        <p class="small-text text-white">Systems Engineer</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3  mt-4 mb-4">
-                <img class="headshot" src="./images/Michael%20Headshot.png" alt="">
+            <div class="col-xl-3 col-lg-4 col-sm-6 mt-4 mb-4">
+                <div class="headshot">
+                    <img src="./images/Michael%20Headshot.png" alt="">
+                    <div class="headshot-text position-absolute">
+                        <p class="normal-text text-white fw-bold">Michael Reichenbach</p>
+                        <p class="small-text text-white">Account Executive</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3  mt-4 mb-4">
-                <img class="headshot" src="./images/Vanessa%20Headshot.png" alt="">
+            <div class="col-xl-3 col-lg-4 col-sm-6 mt-4 mb-4">
+                <div class="headshot">
+
+                    <img src="./images/Vanessa%20Headshot.png" alt="">
+                    <div class="headshot-text position-absolute">
+                        <p class="normal-text text-white fw-bold">Vanessa Ngirdimau</p>
+                        <p class="small-text text-white">Marketing Manager</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3  mt-4 mb-4">
-                <img class="headshot" src="./images/Joseph%20Headshot.png" alt="">
+            <div class="col-xl-3 col-lg-4 col-sm-6 mt-4 mb-4">
+                <div class="headshot">
+
+                    <img src="./images/Joseph%20Headshot.png" alt="">
+                    <div class="headshot-text position-absolute">
+                        <p class="normal-text text-white fw-bold">Joseph Boccella</p>
+                        <p class="small-text text-white">Software Developer</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3  mt-4 mb-4">
-                <img class="headshot" src="./images/No%20Headshot.png" alt="">
+            <div class="col-xl-3 col-lg-4 col-sm-6 mt-4 mb-4">
+                <div class="headshot">
+
+                    <img src="./images/No%20Headshot.png" alt="">
+                    <div class="headshot-text position-absolute">
+                        <p class="normal-text text-white fw-bold">Full Name</p>
+                        <p class="small-text text-white">Project Lead</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <footer
-        class="w-100  vh-100 bg-red position-relative overflow-hidden d-flex justify-content-center position-relative flex-column align-items-center"
+        class="w-100 footer-fit  vh-100 bg-red position-relative overflow-hidden d-flex justify-content-center position-relative flex-column align-items-center"
         style="padding-top: 10rem; padding-bottom: 5rem"
 >
     <div class="red-grid position-absolute"></div>

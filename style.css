@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url("./gotham/Gotham-Bold.otf");
+}
+
+@font-face {
+    font-family: "Gotham-Black";
+    src: url("./gotham/Gotham-Black-Regular.ttf");
+
+}
+
+
 :root {
     --red: #f5584c;
     --yellow: #fdb82c;
@@ -13,6 +25,14 @@
     --light-yellow: #fff1d9;
 }
 
+.navbar-nav .nav-item {
+    margin: 0 20px !important;
+    font-size: 18px !important;
+}
+
+nav {
+    padding: 1rem 0 !important;
+}
 
 button.nav-link {
     background-image: url("./images/dark-checkmark.svg") !important;
@@ -92,6 +112,7 @@ p {
 body {
     color: black;
     overflow-x: hidden;
+    font-family: 'Avenir', sans-serif;
 }
 
 .mid-text {
@@ -115,10 +136,11 @@ body {
 .carousel-item {
     height: 200px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .carousel-item.active,
-.carousel-item-next {
+.carousel-item-next, .carousel-item-prev {
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -204,7 +226,7 @@ body {
     text-transform: uppercase;
     border-radius: 0;
     letter-spacing: 0px;
-    padding: 0.3rem 1.4rem !important;
+    padding: 0.3rem 1rem !important;
     border: 1px solid var(--grey);
 }
 
@@ -216,14 +238,14 @@ li[role] {
     width: 515px;
     height: 276px;
     /*align-self: center;*/
-    box-shadow: -182px 1px 0px 37px #F2F2F2;
+    box-shadow: -230px 1px 0px 37px #f2f2f2;
     border-radius: 0 10px 10px 0;
 }
 
 .inside-product-bkad {
     align-self: center;
     padding: 1.5rem;
-    box-shadow: 204px 0px 0px 0px #ffd78f;
+    box-shadow: 270px 0px 0px 0px #ffd78f;
     background-color: #FFD78F !important;
     border-radius: 20px 0 0px 20px;
 }
@@ -294,11 +316,13 @@ button.nav-link.active + span {
 
 .about-header-headshot {
     position: relative;
+    width: 337px;
+    height: 443px;
 }
 
 .about-header-headshot::after {
-    position: absolute;
-    display: block;
+    /*position: absolute;*/
+    /*display: block;*/
     content: "";
     width: 1000px;
     height: 545px;
@@ -322,6 +346,15 @@ button.nav-link.active + span {
     margin: 3rem 0 !important;
 }
 
+.approaches {
+    width: 60% !important;
+}
+
+.approach-desc {
+    padding-left: 6rem !important;
+
+}
+
 .approaches:first-child {
     margin-top: 1rem !important;
 }
@@ -335,7 +368,7 @@ button.nav-link.active + span {
     display: block;
     top: 23px;
     cursor: pointer;
-    position: absolute;
+    /*position: absolute;*/
     content: "";
     background-image: url("./images/Artwork 23.svg");
     background-size: cover;
@@ -405,11 +438,20 @@ nav {
 }
 
 .fw-black {
-    font-weight: 900;
+    font-family: Gotham-Black, sans-serif !important;
+}
+
+.fw-bold {
+    font-family: Gotham-Bold, sans-serif !important;
+}
+
+.fw-bolder {
+    font-family: Gotham-Bold, sans-serif !important;
+
 }
 
 .big-text {
-    font-size: 58px;
+    font-size: 54px;
 }
 
 .nav-link {
@@ -542,6 +584,7 @@ button[data-bs-dismiss]:hover {
 .group-form {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 60px;
 }
 
@@ -573,6 +616,10 @@ ul {
     display: flex;
     justify-content: start;
     gap: 75px;
+}
+
+footer {
+    /*height: 100vh;*/
 }
 
 .bg-light-grey {
@@ -678,6 +725,7 @@ ul {
 .divider {
     height: 380px;
     left: 47%;
+    width: 5px;
     border-radius: 10px;
 }
 
@@ -688,15 +736,15 @@ ul {
 }
 
 .blue-divider {
-    border: 3px solid var(--bg-blue);
+    background-color: var(--bg-blue);
 }
 
 .red-divider {
-    border: 3px solid var(--red);
+    background-color: var(--red);
 }
 
 .yellow-divider {
-    border: 3px solid var(--yellow);
+    background-color: var(--yellow);
     left: 48% !important;
 }
 
@@ -743,6 +791,10 @@ ul {
     background-image: url("./images/Arrow-1.svg") !important;
 }
 
+#slider {
+    transition: height .3s ease;
+}
+
 button[data-bs-slide-to] {
     background-color: black !important;
     opacity: 1 !important;
@@ -752,10 +804,17 @@ button[data-bs-slide-to] {
     margin: 0 10px;
 }
 
+.draggable {
+    height: 105% !important;
+}
+
 .big-bubble {
     background-image: url("./images/Artwork 37.svg");
     width: 450px;
     height: 306px;
+    /*right: 10% !important;*/
+    top: 30% !important;
+    transform: translateY(-50%) !important;
 }
 
 button[data-bs-slide-to].active {
@@ -817,7 +876,7 @@ button[data-bs-slide-to].active {
 
 /**/
 .calendar {
-    width: 50%;
+    width: 52%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -886,7 +945,7 @@ button[data-bs-slide-to].active {
     list-style-type: none;
     display: inline-block;
     width: 13%;
-    height: 40px;
+    aspect-ratio: 1/1;
     text-align: center;
     margin-bottom: 5px;
     color: black;
@@ -919,28 +978,31 @@ button[data-bs-slide-to].active {
 .headshot img {
     display: block;
     margin: auto;
+    width: 100%;
 }
-.headshot-text{
+
+.headshot-text {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     bottom: 0px;
-    left: 38px;
-    width: 257px;
+    left: 0;
+    width: 100%;
     height: 100px;
 
     text-align: center;
     z-index: 1;
 }
+
 .headshot::after {
     position: absolute;
     content: "";
     display: block;
     bottom: 0;
-    left: 38px;
-    width: 257px;
+    left: 0;
+    width: 100%;
     height: 100px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 30px 30px;
     background-color: rgba(117, 170, 248, 0.82);
 }
